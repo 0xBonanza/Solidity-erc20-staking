@@ -20,3 +20,5 @@
 <p dir="auto">The contract has been deployed successfully on Kovan test network at the following address: 0x81F73B077Ed4B38239B2dbd0724F408B5E806beA</p>
 <h2 dir="auto">REACT Front-end</h2>
 <p dir="auto">This contract can be used by using the front-end of this repo <em>(to be added ...)</em>.&nbsp;</p>
+<h2>How to use?</h2>
+<p dir="auto">This contract has been created by using Python and Brownie. So you should consider using both these tools to reproduce the exact result.</p>
