@@ -1,0 +1,46 @@
+{
+  "contracts": {
+    "ContributorLender": "7691150891307493d3202fc62396bfd3fa395ce0"
+  },
+  "tests": {
+    "tests/Integration/integration_test.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "493cfb06ae3936ac206b82db2d4de35092e0e56b",
+      "txhash": [
+        "12a5bd5949fa3fe018ef4d6822fd1ac212e67ca3"
+      ]
+    },
+    "tests/Unit/unit_test.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "0ee11a1c388f17126496e0ecf37dd02e51d575e2",
+      "txhash": []
+    }
+  },
+  "tx": {
+    "12a5bd5949fa3fe018ef4d6822fd1ac212e67ca3": {
+      "ContributorLender": {
+        "0": [
+          [],
+          [],
+          []
+        ],
+        "6": [
+          [
+            19,
+            20
+          ],
+          [
+            28
+          ],
+          [
+            27
+          ]
+        ]
+      }
+    }
+  }
+}

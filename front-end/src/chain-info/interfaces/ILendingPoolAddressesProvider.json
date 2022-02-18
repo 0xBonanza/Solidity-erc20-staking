@@ -1,0 +1,126 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLendingPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "ast": {
+    "absolutePath": "interfaces/ILendingPoolAddressesProvider.sol",
+    "exportedSymbols": {
+      "ILendingPoolAddressesProvider": [
+        386
+      ]
+    },
+    "id": 387,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 380,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".10"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILendingPoolAddressesProvider",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 386,
+        "linearizedBaseContracts": [
+          386
+        ],
+        "name": "ILendingPoolAddressesProvider",
+        "nameLocation": "68:29:3",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "0261bf8b",
+            "id": 385,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLendingPool",
+            "nameLocation": "113:14:3",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 381,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "127:2:3"
+            },
+            "returnParameters": {
+              "id": 384,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 383,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 385,
+                  "src": "153:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 382,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "153:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "152:9:3"
+            },
+            "scope": 386,
+            "src": "104:58:3",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 387,
+        "src": "58:106:3",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:131:3"
+  },
+  "contractName": "ILendingPoolAddressesProvider",
+  "dependencies": [],
+  "offset": [
+    58,
+    164
+  ],
+  "sha1": "7a4f8efcbe0a4536566b5dbbc85227de8690aa35",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.10;\n\ninterface ILendingPoolAddressesProvider {\n    function getLendingPool() external view returns (address);\n}",
+  "type": "interface"
+}

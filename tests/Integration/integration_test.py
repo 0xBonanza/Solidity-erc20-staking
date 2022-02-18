@@ -1,4 +1,3 @@
-
 from scripts.helpful_scripts import get_account, get_weth, approve_erc20, LOCAL_BLOCKCHAIN_ENVIRONMENTS
 from brownie import ContributorLender, network, config, interface, exceptions
 from web3 import Web3
@@ -18,6 +17,13 @@ def test_deposit_withdraw():
     pool_provider_address = config["networks"][network.show_active()]["lending_pool_addresses_provider"]
     tx_pool = lender_contract.setPoolProvider(pool_provider_address, {"from": account})
     tx_pool.wait(1)
+
+    # set tokens that can be staked
+    tokens_list = ["weth_token", "dai_token"]
+    for token in tokens_list:
+        token_address = config["networks"][network.show_active()][token]
+        tx_stake = lender_contract.setPoolTokens(token_address, {"from": account})
+        tx_stake.wait(1)
 
     # get contributor 1 ready
     weth_token = config["networks"][network.show_active()]["weth_token"]
@@ -59,6 +65,3 @@ def test_deposit_withdraw():
         tx_withdraw = lender_contract.poolRefund(weth_token,
                                                  contribution_back_2,
                                                  {"from": contributor_1})
-
-
-
